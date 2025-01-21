@@ -2,37 +2,75 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Mon Portfolio</title>
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Mon Portfolio</a>
+    <a class="navbar-brand" href="#" id="home">Mon Portfolio</a>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#propos">Propos</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#competences">Competences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#temoignages">Temoignages</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#messages">Message</a></li>
         </ul>
     </div>
 </nav>
 
+
 <header class="text-center my-5">
-    <h1>Bienvenue sur mon portfolio</h1>
+    <h1>Bienvenue sur mon portfolio</h1> <hr>
     <p>Je suis développeur web et voici mes projets.</p>
 </header>
 
+
+<section id="accueil" class="container mb-5">
+    <h1 class="text-center">Page d'Accueil</h1> <hr>
+    <div class="slogan">
+    <p> Mon slogan :   Rien n'est gratuit donc on paye tout, a chacun ca pirogue </p>
+    </div>
+
+    <img src="1728028361320.jpg" alt="desire">
+</section>
+
+
+<section id="propos" class="container mb-5">
+    <h1 class="text-center">A Propos</h1> <hr>
+<p>Presentation :Bonjour, je m'appelle Kataku Désiré. Je suis actuellement étudiant en dernière année de licence en développement web fullstack.
+Passionné par la technologie et le développement, j'ai acquis une solide expérience en utilisant Django et Node.js pour le développement backend,
+ainsi qu'React pour le développement frontend. <br><br>
+
+Ma curiosité et mon engagement me poussent à continuellement apprendre et à me perfectionner dans ce domaine en constante évolution.
+Je suis né le 3 septembre 2004, une date qui marque le début de mon parcours vers l'excellence <br><br>
+
+Je suis enthousiaste à l'idée de relever de nouveaux défis et de contribuer à des projets innovants qui améliorent l'expérience utilisateur et apportent une réelle valeur ajoutée</p>
+
+     <p>
+        Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :
+        <a href="cv_desire_kataku.pdf" download="cv_desire_kataku.pdf" class="btn btn-primary">Télécharger mon CV</a>
+    </p>
+</section>
+
+
+
 <section id="projects" class="container mb-5">
-    <h2 class="text-center">Mes Projets</h2>
+    <h2 class="text-center">Mes Projets</h2> <hr>
     <div class="row">
         <div class="col-md-4">
             <div class="card">
                 <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projet 1">
                 <div class="card-body">
                     <h5 class="card-title">Projet 1</h5>
-                    <p class="card-text">Description du projet 1.</p>
+                    <p class="card-text">Description du projet 1 : un site e-commerce pour la fin de la deuxieme anne de licence</p>
                     <a href="#" class="btn btn-primary">Voir le projet</a>
                 </div>
             </div>
@@ -42,7 +80,7 @@
                 <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projet 2">
                 <div class="card-body">
                     <h5 class="card-title">Projet 2</h5>
-                    <p class="card-text">Description du projet 2.</p>
+                    <p class="card-text">Description du projet 2 : profil en ligne ou porfolio</p>
                     <a href="#" class="btn btn-primary">Voir le projet</a>
                 </div>
             </div>
@@ -60,9 +98,59 @@
     </div>
 </section>
 
+
+
+<section id="competences" class="container mb-5">
+    <h1 class="text-center">Competences</h1> <hr>
+    <p>Liste de competences :
+                <select id="competenceSelect">
+                    <option value="">Sélectionnez une compétence</option>
+                    <option value="html" id="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">javaScript(JS)</option>
+                    <option value="react">REACT</option>
+                    <option value="node">NODE</option>
+                    <option value="mongodb">MONGODB</option>
+                    <option value="express">EXPRESS</option>
+                    <option value="django">DJANGO</option>
+                    <option value="mysql">MYSQL</option>
+                    <option value="postgresql">POSTGRESQL</option>
+                    <option value="python">PYTHON</option>
+                    <option value="pandas">PANDAS</option>
+                    <option value="matplotlib">MATPLOTLIB</option>
+                    <option value="nampy">NAMPY</option>
+                    <option value="scikit-learn">SCIKIT-LEARN</option>
+                    <option value="keras">KERAS</option>
+                </select>
+    </p>
+    <p>Niveau de competences :  <span id="niveauCompetence">Sélectionnez une compétence</span> </p>
+</section>
+
+
+
+<section id="temoignages" class="container mb-5">
+    <h1 class="text-center">Temoignages</h1> <hr>
+    <p>Avis de clients ou collegues : </p>
+</section>
+
+
+
 <section id="contact" class="container mb-5">
-    <h2 class="text-center">Contactez-moi</h2>
-   <form action="https://formspree.io/f/xannrora" method="POST">
+    <h1 class="text-center">Contactez-moi</h1> <hr>
+    <div class="text-center my-5">
+      <p>
+           E-mail : desirekataku552@gmail.com <br>
+           numero & whatsapp : 0859142931 <br>
+          facebook : desire dkm
+       </p>
+</div>
+</section>
+
+
+
+<section id="messages" class="container mb-5">
+    <h2 class="text-center">Message</h2> <hr>
+    <form action="https://formspree.io/f/xannrora" method="POST">
     <div class="form-group">
         <label for="name">Nom</label>
         <input type="text" class="form-control" id="name" name="name" required>
@@ -76,8 +164,10 @@
         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
     </div>
     <button type="submit" class="btn btn-success">Envoyer</button>
-    </form>
+    </form> <br>
 </section>
+
+
 
 
 
@@ -85,9 +175,49 @@
     <p>&copy; 2025 Mon Nom. Tous droits réservés.</p>
 </footer>
 
+
+<a href="#home">Retour en haut</a>
+
+
+
+
+
+<script>
+    const competenceSelect = document.getElementById('competenceSelect');
+    const niveauCompetence = document.getElementById('niveauCompetence');
+
+    const niveaux = {
+        html: "Avancé",
+        css: "Avancé",
+        javascript: "Avancé",
+        react: "Intermédiaire",
+        node: "Avancé",
+        mongodb: "Intermédiaire",
+        express: "Avancé",
+        django: "Avancé",
+        mysql: "Avancé",
+        postgresql: "Intermédiaire",
+        sqlite: "Avancé",
+        python: "Avancé",
+        pandas: "Intermédiaire",
+        matplotlib: "Intermédiaire",
+        nampy: "Intermédiaire",
+        scikit-learn: "Intermédiaire",
+        keras: "Intermédiaire",
+    };
+
+    competenceSelect.addEventListener('change', function() {
+        const selectedValue = competenceSelect.value;
+        niveauCompetence.textContent = selectedValue ? niveaux[selectedValue] : "Sélectionnez une compétence";
+    });
+</script>
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
+
+
